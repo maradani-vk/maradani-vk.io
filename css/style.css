@@ -1,0 +1,380 @@
+#head{
+	background-color: #333;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.4em;
+}
+
+body{
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.4em;
+	font-weight: 400;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container{
+	position: relative;
+	text-align: center;
+}
+#navbar{
+	width: 100%;
+	padding: 0px;
+	margin :0px;
+	border-bottom: 1px solid #333;
+    background-color:azure;
+}
+
+#navbar i{
+	margin-left: 10px;
+}
+#navbar li a{
+	text-decoration-line: none;
+	color: #000;
+	font-size: 1.1em;
+}
+
+/* show case section */
+#showcase a{
+	text-decoration-line: none;
+	color: #fff;
+}
+#showcase a:hover{
+	color:#e3e3e3;
+}
+#navbar li{
+	display: inline;
+	margin-right: 20px;
+	padding-bottom: 7px;
+}
+
+/* currect page show */ 
+#select{
+	border-bottom: 3px #333 solid;
+}
+#navbar li:hover{
+	border-bottom: 3px #333 solid;
+}
+/* HOME PAGE */
+
+/*Phone number input*/
+input{
+	width: 150px;
+	height: 30px;
+}
+.primary{
+    color:#59a79a; /* Text color */
+    font-size: 3rem; /* Font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    -webkit-text-stroke: 1px #1d7565; /* Create a bold outline */
+    transform: translateX(5px); /* Move the text slightly right for 3D effect */
+}
+
+#fotter{
+  background-color: #333;
+  color:goldenrod;
+  background-image: url('images/blackcomb.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.contact_title{
+    color: gold;
+    font-family: 'Lora', serif;
+}
+#fotter ul li{
+	padding: 5px;
+    list-style-type: none;
+}
+
+input{
+	color: #000;
+} 
+
+#fotter i{
+	padding-right: 20px;
+}
+#copy{
+	background-color: #59a79a;
+	color: #fff;
+	padding: 20px;
+	font-size: 1.3em;
+}
+
+#showcase .row{
+  height:auto;
+}
+#showcase{
+	color:white;
+	border: 1px solid #000;
+    background-image: url('images/headerbg.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.titleprimary{
+	background-color:orange;
+	border-radius: 1.3em;
+	padding: 15px 20px; 
+    font-weight: 300;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    color:#59a79a; /* Text color */
+    color:#59a79a; /* Text color */
+    font-size: 3rem; /* Font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Adjust letter spacing as needed */
+    text-shadow: -3px 3px 0px rgba(0, 0, 0, 0.3); /* Shadow for the top-right 3D effect */
+    -webkit-text-stroke: 2px white; /* Create a bold outline */
+    transform: translateX(5px); /* Move the text slightly right for 3D effect */
+}
+.titlebody{
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* PRODUCTS SECTION */
+.T-text{
+    font-family: 'Lora', serif;
+    color:goldenrod; /* Text color */
+    font-size: 3rem; /* Font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+    -webkit-text-stroke: 1px gold; /* Create a bold outline */
+    transform: translateX(5px); /* Move the text slightly right for 3D effect */
+}
+#products {
+    padding: 30px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow products to wrap to the next row */
+    justify-content: space-between;
+}
+
+.product {
+    flex: 0 0 calc(50% - 20px); /* Adjust the percentage width and spacing as needed */
+    padding: 10px;
+    text-align: center;
+    background-image: url('images/productsbg.png');
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.product h3 {
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* Set the height for the image container */
+}
+
+.product-image {
+    display: none;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.534);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.prev-button img {
+    max-width: 100%; /* Ensure the image fits within the button */
+    height: 30px;
+    margin-right: 3px; /* Add some spacing between the image and text (adjust as needed) */
+}
+.next-button img {
+    max-width: 100%; /* Ensure the image fits within the button */
+    height: 30px;
+    margin-left: 3px; /* Add some spacing between the image and text (adjust as needed) */  
+}
+.prev-button:hover,
+.next-button:hover {
+    background-color: #555;
+}
+
+/* Media query for mobile screens */
+/* Media query for laptop screens */
+@media (max-width: 1199px) {
+    .product {
+        flex-basis: calc(33.33% - 20px); /* 3 products in a row */
+    }
+}
+
+/* Media query for tablet screens */
+@media (max-width: 767px) {
+    .product {
+        flex-basis: calc(50% - 20px); /* 2 products in a row */
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .product {
+        flex-basis: 100%; /* 1 product in a row */
+    }
+}
+
+/*Links Section*/
+#links {
+    padding: 30px 0;
+    background-color:whitesmoke;
+    
+}
+/* Style for the video container */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+.app-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-app {
+    flex: 0 0 calc(50% - 20px); /* Display 2 apps per row for mobile screens */
+    padding: 10px;
+    margin: 10px; /* Add margin for spacing between social apps */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    border-radius: 5px;
+    animation: pulsate 1s infinite;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .social-app {
+        flex: 0 0 calc(25% - 20px); /* Display 4 apps per row for laptop screens */
+    }
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.social-app img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    width: 80px; /* Set a specific width for the images */
+    border-radius: 1.5em;
+}
+
+.social-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* quick call*/
+.social-icon {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.social-circle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin: 0 auto;
+    animation: bounce 0.3s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.social-circle .social-icon {
+    width: 200px; 
+    height: 200px; 
+}
+
+.secondary{
+    font-style:initial;
+    outline: #000;
+    outline-width: 0.4cap;
+    font-family:Verdana;
+	color: rgb(4, 150, 4);
+}
+
+/* Add this CSS for the bee animation */
+#showcase {
+    position: relative;
+}
+
+.bee {
+    width: 50px;
+    height: 50px;
+    background-image: url('bee.png'); /* Replace with your bee image */
+    background-size: cover;
+    position: absolute;
+    animation: beeFly 10s linear infinite;
+}
+
+.bee2 {
+    top: 10px;
+    left: 5px;
+    animation-delay: 1s;
+}
+
+
+
+@keyframes beeFly {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -10px);
+    }
+    50% {
+        transform: translate(20px, 0);
+    }
+    75% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
